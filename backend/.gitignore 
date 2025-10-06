@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+.env
+.env.*
+
+# PyCharm / VSCode
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Node (for future frontend)
+node_modules/
+.next/
+
+# Alembic cache
+backend/pipeline_api/alembic/__pycache__/
+
+# Docker volumes (if any)
+pgdata/
