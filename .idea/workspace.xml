@@ -5,22 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eabd6aaf-a18e-439d-af5e-b86d7eeeaf01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/FINBUDDY.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/pipeline_api/app/api/v1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/pipeline_api/app/api/v1/entries.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/pipeline_api/app/core/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/pipeline_api/app/core/db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/pipeline_api/app/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/pipeline_api/app/models/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/pipeline_api/app/models/entry.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/pipeline_api/app/schemas/entries.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/pipeline_api/app/services/composer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/pipeline_api/app/api/v1/reports.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/pipeline_api/app/db/migrations/versions/20251008_01_double_entry_core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/pipeline_api/app/models/accounting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/pipeline_api/app/repositories/accounting_repo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/pipeline_api/app/schemas/accounting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/pipeline_api/app/services/posting_composer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pipeline_api/app/api/v1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pipeline_api/app/api/v1/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pipeline_api/app/api/v1/entries.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pipeline_api/app/api/v1/entries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pipeline_api/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pipeline_api/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pipeline_api/app/models/entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pipeline_api/app/models/entry.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +31,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ibrahimrauf-773&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ibrahimrauf-773/finbuddy.git&quot;,
+    &quot;accountId&quot;: &quot;a54c7d6c-17d6-470d-8f39-11999ed5071e&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -45,24 +53,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.Run FinBuddy.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.Run FinBuddy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/pipeline_api/app/api/v1/routers" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Run FinBuddy" type="PythonConfigurationType" factoryName="Python">
       <module name="FINBUDDY" />
@@ -88,46 +101,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="FINBUDDY" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="FINBUDDY" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.26830.99" />
         <option value="bundled-python-sdk-164cda30dcd9-0af03a5fa574-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26830.99" />
       </set>
     </attachedChunks>
@@ -139,15 +117,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1759779366792</updated>
-      <workItem from="1759779485227" duration="3665000" />
+      <workItem from="1759779485227" duration="8243000" />
+      <workItem from="1759932243673" duration="8077000" />
+      <workItem from="1760040308825" duration="3812000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/backend/pipeline_api/app/schemas/entry.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FINBUDDY$main.coverage" NAME="main Coverage Results" MODIFIED="1759779633613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/pipeline_api/app" />
-    <SUITE FILE_PATH="coverage/FINBUDDY$Run_FinBuddy.coverage" NAME="Run FinBuddy Coverage Results" MODIFIED="1759782364529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/pipeline_api" />
+    <SUITE FILE_PATH="coverage/FINBUDDY$Run_FinBuddy.coverage" NAME="Run FinBuddy Coverage Results" MODIFIED="1760050353431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/pipeline_api" />
   </component>
 </project>
